@@ -9,26 +9,27 @@ https://www.tooplate.com/view/2097-pop
   --black-alfa: rgba(0, 0, 0, 0.5);
   --white: #ffffff;
   --blue: #0e7fb9;
-  --bg-display: rgba(0, 0, 0, 0.975);
+  --bg-display: rgba(0, 0, 0, 0.95);
 }
 
 body {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 19px;
-  font-weight: 300;
+  font-family: "Chivo", sans-serif;
+  font-size: 1.3rem;
   color: var(--white);
   position: relative;
+  letter-spacing: 1.6px;
 }
 .material-icons.md-48 {
   font-size: 64px;
 }
 h1 {
-  font-size: 2.8rem;
+  font-size: 6rem;
 }
 
 .logo-h1 {
   display: flex;
   align-items: center;
+  font-family: "Baskervville", serif;
 }
 
 #tm-bg {
@@ -64,8 +65,7 @@ h1 {
 }
 
 p {
-  line-height: 1.9;
-  letter-spacing: 0.8px;
+  line-height: 1.6;
 }
 
 .tm-main-content {
