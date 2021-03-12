@@ -14,6 +14,7 @@ https://www.tooplate.com/view/2097-pop
 
 body {
   font-family: "Chivo", sans-serif;
+  font-display: swap;
   font-size: 1.3rem;
   color: var(--white);
   position: relative;
