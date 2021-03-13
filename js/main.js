@@ -180,12 +180,12 @@
           slider.slick("destroy");
         }
 
-        if ($(window).width() > 767) {
+        if ($(window).width() > 760) {
           // Slick carousel
           slider.slick({
             dots: true,
             infinite: true,
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
           });
         } else {
