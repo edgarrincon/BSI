@@ -422,6 +422,12 @@ p:last-child {
     font-size: 15px;
   }
 
+  @media (max-width: 468px) {
+    .slick-dots li button:before {
+      display: none;
+    }
+  }
+
   footer {
     position: relative;
     bottom: 0;
