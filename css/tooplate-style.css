@@ -264,7 +264,7 @@ p {
 
 .slick-dots {
   position: absolute;
-  bottom: -40px;
+  bottom: -50px;
   display: block;
   width: 100%;
   padding: 0;
@@ -406,7 +406,7 @@ p:last-child {
   }
 }
 
-@media (max-width: 544px) {
+@media (max-width: 600px) {
   .tm-main-content {
     flex-direction: column;
   }
@@ -416,10 +416,18 @@ p:last-child {
   .slick-dots li button:before {
     font-size: 15px;
   }
+  @media (max-width: 500px) {
+    .slick-dots {
+      bottom: -58px;
+    }
+  }
 
-  @media (max-width: 468px) {
+  @media (max-width: 320px) {
+    .details__bg {
+      padding: 10px 10px;
+    }
     .slick-dots li button:before {
-      display: none;
+      font-size: 10px;
     }
   }
 
