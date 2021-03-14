@@ -1,24 +1,20 @@
-/*
-
-Template 2097 Pop
-
-https://www.tooplate.com/view/2097-pop
-
-*/
 :root {
-  --black-alfa: rgba(0, 0, 0, 0.5);
   --white: #ffffff;
-  --blue: #0e7fb9;
-  --bg-display: rgba(0, 0, 0, 0.95);
+  --blue: rgb(84, 97, 139);
+  --bg-display: -webkit-linear-gradient(
+    top,
+    rgb(84, 97, 139) 0%,
+    rgb(156, 142, 133) 100%
+  );
 }
 
 body {
-  font-family: "Chivo", sans-serif;
+  font-family: "Chivo", sans-serif, serif, cursive, monospace;
   font-display: swap;
   font-size: 1.3rem;
   color: var(--white);
   position: relative;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.5px;
 }
 .material-icons.md-48 {
   font-size: 64px;
@@ -35,7 +31,7 @@ h2 {
 .logo-h1 {
   display: flex;
   align-items: center;
-  font-family: "Baskervville", serif;
+  font-family: "Baskervville", sans-serif, serif, cursive, monospace;
 }
 
 #tm-bg {
@@ -71,7 +67,7 @@ h2 {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .tm-main-content {
@@ -128,7 +124,7 @@ p {
   left: 0;
   right: 0;
   bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-display);
 }
 
 .fa-3x {
@@ -141,7 +137,7 @@ p {
 }
 
 .product:hover {
-  background: rgba(0, 0, 0, 0.6);
+  background: var(--bg-display);
   color: var(--bg-display);
 }
 
@@ -194,7 +190,7 @@ p {
 }
 
 .details {
-  font-size: 1rem;
+  font-size: 1.3rem;
   width: 100%;
   height: 100%;
   bottom: 0;
@@ -355,7 +351,6 @@ footer {
 }
 
 .tm-copyright-text {
-  background-color: var(--black-alfa);
   display: inline-block;
   padding: 10px 30px;
 }
