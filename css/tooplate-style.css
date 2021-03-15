@@ -140,12 +140,10 @@ p {
 
 .tm-nav-icon {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-  height: 75px;
-  width: 75px;
+  margin: auto;
+  padding-bottom: 25px;
   filter: invert(100%);
+  width: 96px;
 }
 /* Expanding Grid Items from Codrops */
 .tm-page-title {
@@ -422,6 +420,17 @@ p:last-child {
     }
   }
 
+  @media (max-width: 500px) {
+    .slick-dots {
+      bottom: -58px;
+    }
+  }
+  @media (max-width: 450px) {
+    .tm-nav-icon {
+      width: 60px;
+    }
+  }
+
   @media (max-width: 320px) {
     .details__bg {
       padding: 10px 10px;
@@ -441,9 +450,5 @@ p:last-child {
   .tm-nav-link {
     width: 120px;
     height: 120px;
-  }
-
-  .fa-3x {
-    font-size: 2.2em;
   }
 }
