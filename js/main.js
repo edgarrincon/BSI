@@ -5,9 +5,8 @@
 
       const detailsTmpl = `
 			<div class="details__bg details__bg--down">
-				<button class="details__close"><span class="material-icons tm-fa-close"
-				>cancel</span
-			  ></button>
+				<button class="details__close"><img src='img/icon/close-round.svg'/>        
+        </button>
 				<div class="details__description"></div>
 			</div>						
 			`;

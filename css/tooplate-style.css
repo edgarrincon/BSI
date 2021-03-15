@@ -16,9 +16,7 @@ body {
   position: relative;
   letter-spacing: 1.5px;
 }
-.material-icons.md-48 {
-  font-size: 64px;
-}
+
 h1 {
   font-size: 6rem;
   margin-left: 12px;
@@ -241,11 +239,10 @@ p {
   right: 0;
   border: 0;
   background: none;
-  margin: 1em;
+  margin: 0.7em;
   cursor: pointer;
-  font-size: 0.85em;
-  color: var(--white);
   z-index: 1001;
+  filter: invert(100%);
 }
 
 /* Team */
