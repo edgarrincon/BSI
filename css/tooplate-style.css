@@ -26,6 +26,9 @@ h2 {
   font-size: 1.3rem;
 }
 
+h3 {
+  font-size: 3rem;
+}
 .logo-h1 {
   display: flex;
   align-items: center;
@@ -70,7 +73,7 @@ p {
 
 .texto-titulo {
   color: var(--pink);
-  font-size: 35px;
+  font-size: 2rem;
   text-shadow: 0.7px 0.7px #343434;
 }
 
@@ -333,7 +336,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--blue);
+  background-color: var(--pink);
   border-color: transparent;
 }
 
@@ -350,7 +353,7 @@ footer {
   color: var(--white);
 }
 .tm-text-highlight:hover {
-  color: var(--blue);
+  color: var(--pink);
 }
 .tm-main-content.tm-footer-relative {
   flex-direction: column;
