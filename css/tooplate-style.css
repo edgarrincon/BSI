@@ -1,6 +1,7 @@
 :root {
   --white: #ffffff;
   --blue: rgb(84, 97, 139);
+  --pink: #e91e63;
   --bg-display: -webkit-linear-gradient(
     top,
     rgb(84, 97, 139) 0%,
@@ -65,6 +66,18 @@ h2 {
 
 p {
   line-height: 1.5;
+}
+
+.texto-titulo {
+  color: var(--pink);
+  font-size: 35px;
+  text-shadow: 0.7px 0.7px #343434;
+}
+
+.img-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tm-main-content {
