@@ -143,9 +143,13 @@ p {
 
 .tm-nav-icon {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 25px;
+  height: 75px;
+  width: 75px;
+  filter: invert(100%);
 }
-
 /* Expanding Grid Items from Codrops */
 .tm-page-title {
   font-weight: 300;
