@@ -1,6 +1,7 @@
 :root {
   --white: #ffffff;
   --blue: #002868;
+  --gray-dark: #343a40;
   --bg-display: -webkit-linear-gradient(
     top,
     rgb(84, 97, 139) 0%,
@@ -410,12 +411,14 @@ p {
   background-color: var(--white);
   color: var(--bg-display);
   padding: 0.75rem;
+  color: var(--gray-dark);
 }
 
 .form-control:focus {
   color: var(--bg-display);
   background-color: var(--white);
   border-color: transparent;
+  color: var(--gray-dark);
 }
 
 .tm-col-email {
