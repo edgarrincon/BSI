@@ -360,10 +360,11 @@ p {
   right: 0;
   border: 0;
   background: none;
-  margin: 0.7em;
+  margin: 0.5rem;
   cursor: pointer;
   z-index: 1001;
   filter: invert(100%);
+  outline: none;
 }
 
 /* Team */
@@ -557,7 +558,7 @@ p:last-child {
 
   @media (max-width: 320px) {
     .details__bg {
-      padding: 10px 10px;
+      padding: 40px 10px 10px 10px;
     }
     .slick-dots li button:before {
       font-size: 10px;
