@@ -364,6 +364,9 @@ p {
   cursor: pointer;
   z-index: 1001;
   filter: invert(100%);
+}
+
+.details__close:focus {
   outline: none;
 }
 
