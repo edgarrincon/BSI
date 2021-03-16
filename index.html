@@ -63,6 +63,19 @@ https://www.tooplate.com/view/2097-pop
           "Please view this in a modern browser such as latest version of Chrome or Microsoft Edge."
         );
     </script>
+
+    <!-- http://EMAILjs.com/ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="js/EmailJS.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_9Y1UGbYPsjES2KPpYNlsA");
+      })();
+    </script>
   </head>
 
   <body>
@@ -476,6 +489,7 @@ https://www.tooplate.com/view/2097-pop
                                 action="index.html"
                                 method="post"
                                 class="contact-form"
+                                id="contact-form"
                               >
                                 <div class="row">
                                   <div
@@ -542,6 +556,7 @@ https://www.tooplate.com/view/2097-pop
                                   ></textarea>
                                 </div>
                                 <button
+                                  onclick="sendMail()"
                                   type="submit"
                                   class="btn btn-primary tm-btn-submit"
                                 >
@@ -583,17 +598,7 @@ https://www.tooplate.com/view/2097-pop
     <script src="js/anime.min.js"></script>
     <!-- http://animejs.com/ -->
     <script src="js/main.js"></script>
-    <!-- http://EMAILjs.com/ -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
-    ></script>
 
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_9Y1UGbYPsjES2KPpYNlsA");
-      })();
-    </script>
     <!-- http://footer/ -->
     <script>
       function setupFooter() {
