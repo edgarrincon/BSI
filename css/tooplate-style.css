@@ -1,7 +1,6 @@
 :root {
   --white: #ffffff;
-  --blue: rgb(84, 97, 139);
-  --pink: #e91e63;
+  --blue: #2276a5;
   --bg-display: -webkit-linear-gradient(
     top,
     rgb(84, 97, 139) 0%,
@@ -180,9 +179,9 @@ p {
 }
 
 .texto-titulo {
-  color: var(--pink);
+  color: var(--blue);
   font-size: 2rem;
-  text-shadow: 0.7px 0.7px #343434;
+  text-shadow: 0.7px 0.7px #f8f8f8;
 }
 
 .img-detail {
@@ -400,7 +399,7 @@ p {
 
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
-  color: var(--pink);
+  color: var(--blue);
 }
 
 /* Contact */
@@ -448,7 +447,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--pink);
+  background-color: var(--blue);
   border-color: transparent;
 }
 
@@ -465,7 +464,7 @@ footer {
   color: var(--white);
 }
 .tm-text-highlight:hover {
-  color: var(--pink);
+  color: var(--blue);
 }
 .tm-main-content.tm-footer-relative {
   flex-direction: column;
