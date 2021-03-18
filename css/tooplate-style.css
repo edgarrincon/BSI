@@ -522,9 +522,11 @@ footer {
 a,
 button {
   transition: all 0.3s ease;
+  color: var(--white);
 }
 a:hover,
 a:focus {
+  color: var(--blue);
   text-decoration: none;
   outline: none;
 }
