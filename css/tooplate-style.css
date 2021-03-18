@@ -15,6 +15,7 @@ body {
   color: var(--white);
   position: relative;
   letter-spacing: 1.5px;
+  background-color: #343a40;
 }
 
 h1 {
@@ -404,18 +405,15 @@ p {
 }
 
 /* Contact */
-.form-control {
+.form-control-bsi {
   font-size: 1.1rem;
   border-radius: 0;
   border: none;
-  background-color: var(--white);
-  color: var(--bg-display);
   padding: 0.75rem;
   color: var(--gray-dark);
 }
 
-.form-control:focus {
-  color: var(--bg-display);
+.form-control-bsi:focus {
   background-color: var(--white);
   border-color: transparent;
   color: var(--gray-dark);

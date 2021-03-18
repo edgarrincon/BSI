@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="B&S Installation Inc." />
+    <meta property="og:title" content="B&S Installation Inc." />
+    <meta
+      property="og:description"
+      content="Railings & Handrails Installation"
+    />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://raw.githubusercontent.com/edgarrincon/BSI/main/img/MediaShare.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:updated_time" content="1440432930" />
+    <meta property="og:url" content="https://bsi.vercel.app/" />
+    <link rel="icon" href="img/favico.png" type="image/png" />
+
+    <title>BSI Contacs</title>
+
+    <!-- load CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville&family=Chivo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- https://getbootstrap.com/-->
+    <link rel="stylesheet" href="css/tooplate-style.css" />
+    <!-- Templatemo style -->
+
+    <!-- http://EMAILjs.com/ -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="js/EmailJS.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_9Y1UGbYPsjES2KPpYNlsA");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="row mb-4">
+      <div class="col-12">
+        <p>
+          <strong> Do you have any questions about our work? </strong>
+          Contact BSI by phone or fill out the general inquiry form below to
+          send us an email. Complete the form and we can answer any questions.
+        </p>
+      </div>
+    </div>
+
+    <!-- formulario-->
+    <div class="row form-control-bsi">
+      <div class="col-12">
+        <form action="/" class="contact-form" id="contact-form">
+          <div class="row">
+            <div class="form-group col-md-6 col-lg-6 col-xl-6">
+              <input
+                type="text"
+                id="contact_name"
+                name="contact_name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-6 col-xl-6 tm-col-email">
+              <input
+                type="email"
+                id="contact_email"
+                name="contact_email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-6 col-xl-6">
+              <input
+                type="text"
+                id="contact_subject"
+                name="contact_subject"
+                class="form-control"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div class="form-group col-md-6 col-lg-6 col-xl-6 tm-col-email">
+              <input
+                type="tel"
+                id="contact_tel"
+                name="contact_tel"
+                class="form-control"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="contact_message"
+              name="contact_message"
+              class="form-control"
+              rows="9"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <button
+            onclick="sendMail()"
+            type="button"
+            class="btn btn-primary tm-btn-submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p class="small tm-copyright-text">
+        Copyright &copy; <span class="tm-current-year"></span> B&S Installation
+        Inc. » Developed by
+        <a
+          rel="nofollow"
+          target="_blank"
+          href="https://standardsapps.com"
+          class="tm-text-highlight"
+          >Standards Apps</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
