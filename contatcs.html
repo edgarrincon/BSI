@@ -66,11 +66,16 @@
           <div class="col-md-8">
             <div class="contact-page-form" method="post">
               <h2>Get in Touch</h2>
-              <form action="contact-mail.php" method="post">
+              <form method="post">
                 <div class="row">
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="single-input-field">
-                      <input type="text" placeholder="Your Name" name="name" />
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        name="contact_name"
+                        id="contact_name"
+                      />
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -78,7 +83,8 @@
                       <input
                         type="email"
                         placeholder="E-mail"
-                        name="email"
+                        name="contact_email"
+                        id="contact_email"
                         required
                       />
                     </div>
@@ -88,25 +94,36 @@
                       <input
                         type="text"
                         placeholder="Phone Number"
-                        name="phone"
+                        name="contact_tel"
+                        id="contact_tel"
                       />
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="single-input-field">
-                      <input type="text" placeholder="Subject" name="subject" />
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        name="contact_subject"
+                        id="contact_subject"
+                      />
                     </div>
                   </div>
                   <div class="col-md-12 message-input">
                     <div class="single-input-field">
                       <textarea
                         placeholder="Write Your Message"
-                        name="message"
+                        name="contact_message"
+                        id="contact_message"
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-md-12 pl-0">
-                    <button class="single-input-fieldsbtn" type="button">
+                    <button
+                      class="single-input-fieldsbtn"
+                      type="submit"
+                      onclick="sendMail()"
+                    >
                       Submit Info
                     </button>
                   </div>
@@ -132,31 +149,40 @@
           <div class="col-md-4">
             <div class="contact-info">
               <div class="detail-svg-box">
-                <img class="detail-svg-img" src="img/icon/online-form.svg" />
-                <span class="detail-svg-text">
-                  1018 Dallas Daker Rd St South</span
-                >
-                <p>Houston, TX</p>
+                <img class="detail-svg-img" src="img/icon/map-pin.svg" />
+                <address>
+                  <div class="detail-svg-text">
+                    <h2>Address</h2>
+                    <p>1018 Daker Rd St » Houston, TX</p>
+                  </div>
+                </address>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-info">
               <div class="detail-svg-box">
-                <img class="detail-svg-img" src="img/icon/online-form.svg" />
-                <span class="detail-svg-text"> Email & Phone 301-506-785</span>
-                <p>bsirailing@gmail.com</p>
+                <img class="detail-svg-img" src="img/icon/pink-mail.svg" />
+                <div class="detail-svg-text">
+                  <h2>Contacs</h2>
+                  <p>
+                    <a href="mailto:bsirailing@gmail.com"
+                      >bsirailing@gmail.com</a
+                    >
+                    <a href="tel:+13058429523">3058429523</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-info">
               <div class="detail-svg-box">
-                <img class="detail-svg-img" src="img/icon/online-form.svg" />
-                <span class="detail-svg-text">
-                  Mon - Sat 8:00 am - 6.00 pm</span
-                >
-                <p>Office time</p>
+                <img class="detail-svg-img" src="img/icon/pending-clock.svg" />
+                <div class="detail-svg-text">
+                  <h2>Schedule</h2>
+                  <p>Monday - Saturday 8:00 am - 6.00 pm</p>
+                </div>
               </div>
             </div>
           </div>
@@ -165,8 +191,7 @@
     </section>
     <footer>
       <p class="small tm-copyright-text">
-        Copyright &copy; <span class="tm-current-year"></span> B&S Installation
-        Inc. » Developed by
+        Copyright &copy; <span>2021</span> B&S Installation Inc. » Developed by
         <a
           rel="nofollow"
           target="_blank"
@@ -176,5 +201,6 @@
         >
       </p>
     </footer>
+    <!-- http://footer/ -->
   </body>
 </html>

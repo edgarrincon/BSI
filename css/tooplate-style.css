@@ -75,6 +75,7 @@ h3 {
   -webkit-animation: bounce 1s infinite alternate;
   display: flex;
   justify-content: center;
+  filter: blur(0);
 }
 @keyframes bounce {
   from {
@@ -392,14 +393,16 @@ p {
 
 .detail-svg-box {
   display: flex;
-  align-items: center;
+  margin: auto;
   justify-content: center;
   border: solid 1px var(--white);
   flex-direction: column;
   padding: 20px 40px;
+  max-width: 250px;
 }
 .detail-svg-img {
   filter: invert(100%);
+  max-width: 200px;
 }
 
 .detail-svg-text {
