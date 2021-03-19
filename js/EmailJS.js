@@ -1,3 +1,11 @@
+function cleanInput(params) {
+  document.getElementById("contact_name").value = "";
+  document.getElementById("contact_email").value = "";
+  document.getElementById("contact_subject").value = "";
+  document.getElementById("contact_tel").value = "";
+  document.getElementById("contact_message").value = "";
+}
+
 function sendMail(params) {
   var userData = {
     contact_name: document.getElementById("contact_name").value,
@@ -11,4 +19,5 @@ function sendMail(params) {
     console.log("success", res.status, userData);
   });
   alert("🚀 Thank you! we will keep in touch 🚀");
+  cleanInput();
 }

@@ -45,28 +45,53 @@
         emailjs.init("user_9Y1UGbYPsjES2KPpYNlsA");
       })();
     </script>
+
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this in a modern browser such as latest version of Chrome or Microsoft Edge."
+        );
+    </script>
   </head>
 
   <body>
     <div id="tm-bg"></div>
     <div class="contacs-header">
-      <div class="logo-header pt-3 pl-3 pr-3">
-        <div class="logo-h1">
-          <img src="img/logo.png" class="img-fluid mb-1" />
-          <h1 class="mb-1">BSI</h1>
+      <a href="index.html">
+        <div class="logo-header pt-3 pl-3 pr-3">
+          <div class="logo-h1">
+            <img src="img/logo.png" class="img-fluid mb-1" />
+            <h1 class="mb-1">BSI</h1>
+          </div>
+          <img src="img/underline.png" class="img-fluid mb-1" />
+          <p>INSTALLATION DONE RIGHT</p>
         </div>
-        <img src="img/underline.png" class="img-fluid mb-1" />
-        <p>INSTALLATION DONE RIGHT</p>
-      </div>
+      </a>
     </div>
 
     <section class="contact-page-sec">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <div class="contact-page-form" method="post">
+            <div class="contact-page-form">
               <h2>Get in Touch</h2>
-              <form method="post">
+              <form method="get">
                 <div class="row">
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="single-input-field">
@@ -132,7 +157,7 @@
             </div>
           </div>
           <div class="col-md-4 pt-4">
-            <div class="contact-page-map pt-1 pb-1">
+            <div class="contact-page-map pt-2 pb-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46599.60377508628!2d-95.36986508966703!3d29.762131215192905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8aa20123e43%3A0xc4ba9cd4f50aae43!2sCourtyard%20by%20Marriott%20Houston%20Heights%2FI-10!5e0!3m2!1ses-419!2sve!4v1616125810298!5m2!1ses-419!2sve"
                 width="100%"
@@ -148,43 +173,43 @@
         <div class="row mt-4 mb-4">
           <div class="col-md-4">
             <div class="contact-info">
-              <div class="detail-svg-box">
-                <img class="detail-svg-img" src="img/icon/map-pin.svg" />
-                <address>
-                  <a href="https://goo.gl/maps/v5KoUxD4qk4wpxYu8">
+              <a href="https://goo.gl/maps/v5KoUxD4qk4wpxYu8">
+                <div class="detail-svg-box">
+                  <img class="detail-svg-img" src="img/icon/map-pin.svg" />
+                  <address>
                     <div class="detail-svg-text">
                       <h2>Address</h2>
-                      <p>1018 Daker Rd St <br>» Houston, TX</br></p>
+                      <p>1018 Daker Rd St <br />» Houston, TX</p>
                     </div>
-                  </a>
-                </address>
-              </div>
+                  </address>
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-info">
-              <div class="detail-svg-box">
-                <img class="detail-svg-img" src="img/icon/pink-mail.svg" />
-                <a href="mailto:bsirailing@gmail.com">
+              <a href="mailto:bsirailing@gmail.com">
+                <div class="detail-svg-box">
+                  <img class="detail-svg-img" src="img/icon/pink-mail.svg" />
                   <div class="detail-svg-text">
                     <h2>Mail</h2>
-                    <p>bsirailing@gmail.com <br>» Click to Mail</br></p>
+                    <p>bsirailing@gmail.com <br />» Click to Mail</p>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-md-4">
             <div class="contact-info">
-              <div class="detail-svg-box">
-                <img class="detail-svg-img" src="img/icon/accept-call.svg" />
-                <a href="tel:+13058429523">
+              <a href="tel:+13058429523">
+                <div class="detail-svg-box">
+                  <img class="detail-svg-img" src="img/icon/accept-call.svg" />
                   <div class="detail-svg-text">
                     <h2>Call</h2>
-                    <p>(305)842-95-23 <br>» Click to Call</br></p>
+                    <p>(305)842-95-23 <br />» Click to Call</p>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
