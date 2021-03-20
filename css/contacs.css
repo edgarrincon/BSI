@@ -48,6 +48,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
+
+.contacs-header a:hover {
+  border: none;
+}
 .logo-header {
   display: block;
 }
@@ -93,10 +97,11 @@ button {
 
 a:hover,
 a:focus {
-  text-shadow: 1px 1px 5px var(--blue);
+  border-bottom: 1px solid var(--white);
   text-decoration: none;
   outline: none;
   color: var(--white);
+  transition: all 0.3s ease;
 }
 
 .detail-svg-box {

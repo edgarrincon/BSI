@@ -40,10 +40,11 @@ button {
 }
 a:hover,
 a:focus {
-  text-shadow: 1px 1px 5px var(--blue);
+  border-bottom: 1px solid var(--white);
   text-decoration: none;
   outline: none;
   color: var(--white);
+  transition: all 0.3s ease;
 }
 p {
   line-height: 1.5;
@@ -260,7 +261,6 @@ p:last-child {
   list-style: none;
   display: inline-block;
   border: 1px solid var(--white);
-
   margin: 10px;
 }
 
@@ -345,10 +345,6 @@ p:last-child {
   display: none;
 }
 
-.tm-fa-close {
-  font-size: 48px;
-}
-
 .details {
   font-size: 1.3rem;
   width: 100%;
@@ -428,12 +424,7 @@ p:last-child {
   color: var(--white);
 }
 
-/* Team */
-.tm-reverse-sm {
-  flex-direction: row;
-}
-
-/* Our Work */
+/* Projects */
 
 .tm-slider-img-link {
   padding-left: 10px;
@@ -518,10 +509,6 @@ footer {
   right: 0;
 }
 
-.tm-text-highlight {
-  color: var(--white);
-}
-
 .tm-main-content.tm-footer-relative {
   flex-direction: column;
 }
@@ -535,7 +522,7 @@ footer {
   display: inline-block;
   padding: 10px 30px;
 }
-
+/* media responsive */
 @media (min-width: 900px) {
   .container {
     max-width: 900px;
@@ -567,9 +554,6 @@ footer {
   }
   .tm-col-email {
     padding-left: 15px;
-  }
-  .tm-reverse-sm {
-    flex-direction: column-reverse;
   }
 }
 
