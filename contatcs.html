@@ -100,6 +100,7 @@
                         placeholder="Your Name"
                         name="contact_name"
                         id="contact_name"
+                        required
                       />
                     </div>
                   </div>
@@ -117,10 +118,11 @@
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="single-input-field">
                       <input
-                        type="text"
+                        type="tel"
                         placeholder="Phone Number"
                         name="contact_tel"
                         id="contact_tel"
+                        required
                       />
                     </div>
                   </div>
@@ -140,13 +142,14 @@
                         placeholder="Write Your Message"
                         name="contact_message"
                         id="contact_message"
+                        required
                       ></textarea>
                     </div>
                   </div>
                   <div class="col-md-12 pl-0">
                     <button
                       class="single-input-fieldsbtn"
-                      type="button"
+                      type="submit"
                       onclick="sendMail()"
                     >
                       Submit Info

@@ -16,8 +16,8 @@ function sendMail(params) {
   };
 
   emailjs.send("GMAIL", "TEMPLATE", userData).then(function (res) {
-    console.log("success", res.status, userData);
+    console.log("success", res.status);
   });
-  alert("🚀 Thank you! we will keep in touch 🚀");
-  cleanInput();
+  // alert("Thank you! we will keep in touch");
+  // cleanInput();
 }
