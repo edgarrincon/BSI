@@ -82,6 +82,23 @@ p {
   font-size: 1rem;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+a,
+button {
+  transition: all 0.3s ease;
+  color: var(--white);
+}
+
+a:hover,
+a:focus {
+  text-shadow: 1px 1px 5px var(--blue);
+  text-decoration: none;
+  outline: none;
+  color: var(--white);
+}
+
 .detail-svg-box {
   display: flex;
   margin: auto;
@@ -105,51 +122,6 @@ p {
   padding: 10px;
   color: var(--white);
   flex-direction: column;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tm-text-highlight {
-  color: var(--white);
-}
-.tm-text-highlight:hover {
-  color: var(--blue);
-}
-.tm-main-content.tm-footer-relative {
-  flex-direction: column;
-}
-.tm-main-content.tm-footer-relative footer {
-  position: relative;
-  bottom: 0;
-  margin-top: 50px;
-}
-
-.tm-copyright-text {
-  display: inline-block;
-  padding: 10px 30px;
-  text-align: center;
-}
-
-a,
-button {
-  transition: all 0.3s ease;
-  color: var(--white);
-  cursor: pointer;
-}
-a:hover,
-a:focus {
-  color: var(--blue);
-  text-decoration: none;
-  outline: none;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 section {
@@ -263,4 +235,30 @@ input:focus {
 }
 .contact-page-form form {
   padding: 20px 15px 0;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tm-text-highlight {
+  color: var(--white);
+}
+
+.tm-main-content.tm-footer-relative {
+  flex-direction: column;
+}
+.tm-main-content.tm-footer-relative footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.tm-copyright-text {
+  display: inline-block;
+  padding: 10px 30px;
+  text-align: center;
 }
