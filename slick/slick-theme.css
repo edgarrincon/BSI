@@ -62,7 +62,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+  font-family: "slick", sans-serif;
   font-size: 20px;
   line-height: 1;
 
