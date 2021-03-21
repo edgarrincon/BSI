@@ -40,11 +40,11 @@ button {
 }
 a:hover,
 a:focus {
-  border-bottom: 1px solid var(--white);
+  color: var(--white);
   text-decoration: none;
   outline: none;
-  color: var(--white);
   transition: all 0.3s ease;
+  text-shadow: 1px 0px 1px var(--white);
 }
 p {
   line-height: 1.5;
