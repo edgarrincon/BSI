@@ -16,24 +16,15 @@ function sendMail(params) {
     return false;
   }
 
-  if (!contact_subject.checkValidity() == true) {
-    alert("Please provide your Subject!");
-    contact_subject.focus();
+  if (!contact_tel.checkValidity() == true) {
+    alert("Please provide valid Phone!");
+    contact_tel.focus();
     return false;
   }
 
-  if (!contact_tel.checkValidity() == true) {
-    contact_tel.addEventListener("invalid", () => {
-      if (contact_tel.value === "") {
-        contact_tel.setCustomValidity("Enter phone number!");
-      } else {
-        contact_tel.setCustomValidity(
-          "Enter phone number in this format: 305-842-9523"
-        );
-      }
-    });
-    alert("Please provide your Phone!");
-    contact_tel.focus();
+  if (!contact_subject.checkValidity() == true) {
+    alert("Please provide your Subject!");
+    contact_subject.focus();
     return false;
   }
 
@@ -42,34 +33,17 @@ function sendMail(params) {
     contact_message.focus();
     return false;
   } else {
-    // let userData = {
-    //   contact_name: contact_name.value,
-    //   contact_email: contact_email.value,
-    //   contact_subject: contact_subject.value,
-    //   contact_tel: contact_tel.value,
-    //   contact_message: contact_message.value,
-    // };
+    let userData = {
+      contact_name: contact_name.value,
+      contact_email: contact_email.value,
+      contact_subject: contact_subject.value,
+      contact_tel: contact_tel.value,
+      contact_message: contact_message.value,
+    };
 
-    // emailjs.send("GMAIL", "TEMPLATE", userData).then(function (res) {
-    //   console.log("success", res.status);
-    // });
+    emailjs.send("GMAIL", "TEMPLATE", userData).then(function (res) {
+      console.log("success", res.status);
+    });
     alert("Thank you!🎉 we will keep in touch 🤝");
   }
 }
-
-let phone_input = contact_tel;
-
-phone_input.addEventListener("input", () => {
-  phone_input.setCustomValidity("");
-  phone_input.checkValidity();
-});
-
-contact_tel.addEventListener("invalid", () => {
-  if (contact_tel.value === "") {
-    contact_tel.setCustomValidity("Enter phone number!");
-  } else {
-    contact_tel.setCustomValidity(
-      "Enter phone number in this format: 123-456-7890"
-    );
-  }
-});
