@@ -17,7 +17,7 @@ function sendMail(params) {
   }
 
   if (!contact_tel.checkValidity() == true) {
-    alert("Please provide valid Phone!");
+    alert("Phones 📱 are only numbers between 6 and 14 digits in length!");
     contact_tel.focus();
     return false;
   }
