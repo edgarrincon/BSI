@@ -92,18 +92,19 @@ p:last-child {
 }
 
 .bounce {
-  animation: bounce 1s infinite alternate;
-  -webkit-animation: bounce 1s infinite alternate;
+  animation: bounce 1.5s infinite alternate;
+  -webkit-animation: bounce 1.5s infinite alternate;
   display: flex;
   justify-content: center;
   filter: blur(0);
+  align-self: center;
 }
 @keyframes bounce {
   from {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 @-webkit-keyframes bounce {
@@ -111,7 +112,7 @@ p:last-child {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
 }
 

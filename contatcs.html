@@ -120,11 +120,11 @@
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="single-input-field">
                       <input
-                        type="number"
-                        placeholder="Phone Number"
-                        name="contact_tel"
+                        type="tel"
                         id="contact_tel"
-                        minlength="6"
+                        name="contact_tel"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="Phone Number"
                         required
                       />
                     </div>
@@ -136,7 +136,7 @@
                         placeholder="Subject"
                         name="contact_subject"
                         id="contact_subject"
-                        minlength="2"
+                        minlength="4"
                         required
                       />
                     </div>
