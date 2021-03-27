@@ -24,12 +24,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   text-shadow: 0.7px 0.7px var(--blue);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-shadow: 0.7px 0.7px var(--blue);
 }
 
@@ -48,9 +48,25 @@ a:focus {
 }
 p {
   line-height: 1.5;
+  font-size: 1rem;
 }
 p:last-child {
   margin-bottom: 0;
+}
+
+li {
+  font-size: 1rem;
+}
+ .lista-mision {
+   padding: 0.8rem;
+ }
+
+i {
+  font-size: 1rem;
+}
+
+.centrar{
+  text-align: center;
 }
 
 .logo-h1 {
@@ -92,19 +108,18 @@ p:last-child {
 }
 
 .bounce {
-  animation: bounce 1.5s infinite alternate;
-  -webkit-animation: bounce 1.5s infinite alternate;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
   display: flex;
   justify-content: center;
   filter: blur(0);
-  align-self: center;
 }
 @keyframes bounce {
   from {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 @-webkit-keyframes bounce {
@@ -112,7 +127,7 @@ p:last-child {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 
@@ -410,7 +425,7 @@ p:last-child {
   justify-content: center;
   border: solid 1px var(--white);
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 15px 30px;
   max-width: 250px;
 }
 .detail-svg-img {
@@ -606,3 +621,25 @@ footer {
     height: 120px;
   }
 }
+
+
+/** Grid servicio **/
+.grid-servicio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  
+}
+@media (min-width: 768px) {
+  .grid-1 {
+      grid-template-columns: 3;
+  }
+}
+
+.producto  {
+  text-align: center;
+}
+
