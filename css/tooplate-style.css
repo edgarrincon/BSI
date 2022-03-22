@@ -2,19 +2,15 @@
   --white: #ffffff;
   --blue: #002868;
   --gray-dark: #343a40;
-  --bg-display: -webkit-linear-gradient(
-    top,
-    rgb(84, 97, 139) 0%,
-    rgb(156, 142, 133) 100%
-  );
+  --bg-display: #1c2636;
 }
 
 body {
   font-family: "Chivo", sans-serif, serif, cursive, monospace;
-  font-size: 1.3rem;
+  font-size: 16px;
   color: var(--white);
   position: relative;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.1px;
   background-color: #343a40;
 }
 
@@ -57,15 +53,15 @@ p:last-child {
 li {
   font-size: 1rem;
 }
- .lista-mision {
-   padding: 0.8rem;
- }
+.lista-mision {
+  padding: 0.8rem;
+}
 
 i {
   font-size: 1rem;
 }
 
-.centrar{
+.centrar {
   text-align: center;
 }
 
@@ -319,7 +315,6 @@ i {
   display: block;
   margin: auto;
   padding-bottom: 25px;
-  filter: invert(100%);
   width: 96px;
 }
 /* Expanding Grid Items from Codrops */
@@ -622,7 +617,6 @@ footer {
   }
 }
 
-
 /** Grid servicio **/
 .grid-servicio {
   display: grid;
@@ -631,15 +625,13 @@ footer {
   width: 100%;
   max-width: 1280px;
   margin: auto;
-  
 }
 @media (min-width: 768px) {
   .grid-1 {
-      grid-template-columns: 3;
+    grid-template-columns: 3;
   }
 }
 
-.producto  {
+.producto {
   text-align: center;
 }
-
