@@ -1,6 +1,6 @@
 :root {
   --white: #ffffff;
-  --blue: #002868;
+  --blue: #872c3f;
   --gray-dark: #343a40;
   --bg-display: #1c2636;
 }
@@ -302,8 +302,8 @@ i {
 }
 
 .product {
-  background: transparent;
-  transition: all 0.3s ease;
+  background: var(--bg-display);
+  color: var(--bg-display);
 }
 
 .product:hover {
