@@ -287,10 +287,10 @@ i {
   cursor: pointer;
   position: relative;
 }
-/*
+
 .tm-nav-text {
-  margin: auto;
-}*/
+  margin-bottom: 5px;
+}
 
 .fa-3x {
   font-size: 2.5em;
