@@ -299,10 +299,12 @@ i {
 
 .product {
   background: var(--bg-display);
+  transition: all 0.3s ease;
 }
 
 .product:hover {
   background: transparent;
+  transition: all 0.3s ease;
 }
 
 .tm-nav-icon {
