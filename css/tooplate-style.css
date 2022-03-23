@@ -26,7 +26,7 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  text-shadow: 0.7px 0.7px var(--blue);
+  text-shadow: 0.7px 0.7px var(--bg-display);
 }
 
 a,
@@ -288,14 +288,10 @@ i {
   cursor: pointer;
   position: relative;
 }
-
+/*
 .tm-nav-text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  background-color: var(--bg-display);
-}
+  margin: auto;
+}*/
 
 .fa-3x {
   font-size: 2.5em;
@@ -303,18 +299,15 @@ i {
 
 .product {
   background: var(--bg-display);
-  color: var(--bg-display);
 }
 
 .product:hover {
-  background: var(--bg-display);
-  color: var(--bg-display);
+  background: transparent;
 }
 
 .tm-nav-icon {
   display: block;
   margin: auto;
-  padding-bottom: 25px;
   width: 96px;
 }
 /* Expanding Grid Items from Codrops */
