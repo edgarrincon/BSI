@@ -297,12 +297,12 @@ i {
 }
 
 .product {
-  background: var(--bg-display);
+  background: transparent;
   transition: all 0.3s ease;
 }
 
 .product:hover {
-  background: transparent;
+  background: var(--bg-display);
   transition: all 0.3s ease;
 }
 
