@@ -95,7 +95,6 @@ a:focus {
   text-decoration: none;
   outline: none;
   transition: all 0.3s ease;
-  text-shadow: 1px 0px 1px var(--white);
 }
 
 .detail-svg-box {
@@ -109,10 +108,13 @@ a:focus {
   height: 250px;
   margin-top: 15px;
 }
+
 .detail-svg-img {
   display: flex;
   filter: opacity(0.7);
-  height: 50px;
+  height: 40px;
+  width: 40px;
+  align-self: center;
 }
 
 .detail-svg-text {
@@ -134,6 +136,7 @@ section {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .contact-info-icon {
   margin-bottom: 15px;
 }
@@ -219,7 +222,7 @@ input:focus {
 }
 .single-input-fieldsbtn:hover {
   background: var(--bg-display);
-  transition: all 0.4s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .contact-page-form {
