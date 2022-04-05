@@ -109,6 +109,11 @@ a:focus {
   margin-top: 15px;
 }
 
+.detail-svg-box:hover {
+  background: var(--bg-display);
+  transition: all 0.3s ease;
+}
+
 .detail-svg-img {
   display: flex;
   filter: opacity(0.7);
